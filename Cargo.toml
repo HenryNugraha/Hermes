@@ -1,0 +1,23 @@
+[package]
+name = "hermes"
+version = "1.0.3"
+edition = "2024"
+authors = ["Henry Nugraha"]
+build = "build.rs"
+
+[dependencies]
+eframe = "0.31"
+fastrand = "2.3"
+global-hotkey = "0.6"
+image = { version = "0.25", default-features = false, features = ["png"] }
+lucide-icons = "0.575"
+single-instance = "0.3"
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Input_KeyboardAndMouse",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[build-dependencies]
+winresource = "0.1"
